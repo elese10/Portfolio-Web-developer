@@ -1,0 +1,150 @@
+:root {
+    color-scheme: light;
+    --paper: #FAF9F6;
+    --ink: #181818;
+    --muted: #62625E;
+    --accent: #C63E1B;
+    --border: #D8D7D1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--paper);
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 0 120px;
+    background: var(--paper);
+}
+
+.site-header::after {
+    position: absolute;
+    right: 120px;
+    bottom: 8px;
+    left: 120px;
+    height: 1px;
+    background: var(--border);
+    content: "";
+}
+
+.ec {
+    flex: 0 0 auto;
+    color: var(--ink);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.3;
+    text-decoration: none;
+    transform: translateY(-4px);
+}
+
+.mobile-label {
+    display: none;
+}
+
+.site-nav {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+    transform: translateY(-3px);
+}
+
+.site-nav a:not(.nav-contact) {
+    display: inline-flex;
+    flex: 0 0 116px;
+    align-items: center;
+    width: 116px;
+    height: 48px;
+    color: var(--muted);
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+.site-nav a.is-current {
+    color: var(--accent);
+}
+
+.nav-contact {
+    display: inline-flex;
+    flex: 0 0 153px;
+    align-items: center;
+    justify-content: center;
+    width: 153px;
+    height: 58px;
+    margin-right: 13px;
+    margin-left: 34px;
+    padding: 17px 24px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--ink);
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        display: block;
+        height: 118px;
+        padding: 0 24px;
+    }
+
+    .site-header::after {
+        right: 24px;
+        bottom: 0;
+        left: 24px;
+    }
+
+    .ec {
+        position: absolute;
+        top: 22px;
+        left: 24px;
+        font-size: 28px;
+        transform: none;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 70px;
+        right: 18px;
+        left: 24px;
+        justify-content: space-between;
+        gap: 0;
+        margin: 0;
+        transform: none;
+    }
+
+    .site-nav a:not(.nav-contact) {
+        flex-basis: 84px;
+        width: 84px;
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .nav-contact {
+        display: none;
+    }
+}
