@@ -6,12 +6,17 @@
     <meta name="theme-color" content="#FAF9F6">
     <meta name="description" content="Portfolio de Ezequiel Carcamo, desarrollador web junior.">
     <title>Ezequiel Carcamo | Desarrollador web</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23181818'/%3E%3Ctext x='9' y='44' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23FAF9F6'%3Eec%3C/text%3E%3Ccircle cx='51' cy='42' r='4' fill='%23C63E1B'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header">
         <a class="ec" href="#home" aria-label="Ezequiel Carcamo, inicio">ec.</a>
         <span class="mobile-label" aria-hidden="true">PORTFOLIO</span>
@@ -23,35 +28,34 @@
             <a class="nav-contact" href="#formacion">Hablemos ↗</a>
         </nav>
     </header>
-    <main>
+
+    <main id="main">
         <section class="hero" id="home" aria-labelledby="hero-name">
             <div class="hero-identity">
                 <p class="eyebrow">DESARROLLADOR WEB JUNIOR</p>
                 <h1 id="hero-name"><span>EZEQUIEL</span><span>CARCAMO</span></h1>
-                <span class="hero-rule" aria-hidden="true"></span>
             </div>
 
-            <div class="hero-intro">
-                <h2>Ideas claras.<br>Webs que funcionan.</h2>
-            </div>
-            
+            <h2 class="hero-intro">Ideas claras.<br>Webs que funcionan.</h2>
+
             <p class="hero-copy">Me interesa transformar problemas en experiencias simples. Busco nuevas oportunidades para crear, aprender y aportar en equipo.</p>
 
             <p class="hero-education">Técnico en Programación.<br>Estudiante de Licenciatura en<br class="desktop-break"> Sistemas de Información.</p>
-        
-            <div class="hero-actions" aria-label="Enlaces principales">
+
+            <div class="hero-actions">
                 <div class="primary-actions">
                     <a class="button button-primary" href="#proyectos">Ver proyectos ↗</a>
                     <a class="button button-outline" href="#formacion">Descargar CV ↓</a>
                 </div>
-                <div class="social-links" aria-label="Redes y contacto">
+                <div class="social-links">
                     <a href="https://github.com/elese10">GitHub ↗</a>
                     <a href="https://www.linkedin.com/in/ezequiel-carcamo/">LinkedIn ↗</a>
                     <a href="#formacion">Mail ↗</a>
                 </div>
             </div>
+
             <footer class="hero-footer">
-                <span class="footer-signature">EC / PORTFOLIO PERSONAL</span>
+                <span>EC / PORTFOLIO PERSONAL</span>
                 <a class="footer-explore" href="#proyectos">01 — 04</a>
             </footer>
         </section>
