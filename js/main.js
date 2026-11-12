@@ -146,16 +146,16 @@ const projectsData = {
             "Una biblioteca para explorar videojuegos, consultar información, leer reseñas y organizar colecciones personales.",
 
         challenge:
-            "Organizar juegos, valoraciones y listas personales en un solo lugar, permitiendo que cada usuario gestione su propia biblioteca.",
+            "Organizar juegos, valoraciones y listas personales en un solo lugar, permitiendo que cada usuario gestione su propia biblioteca. Ademas, al ser un trabajo academico, el profesor nos pidio hacer gran parte de las funcionalidades especificamente con PHP, mientras que JS solo podia encargarse de Modals",
 
         approach:
-            "Catálogo consultable, sistema de usuarios, reseñas y tres listas personales: favoritos, deseos y juegos que ya tenés.",
+            "Catálogo consultable, sistema de usuarios, reseñas y tres listas personales: favoritos, deseos y juegos que ya tenés. Ademas de vistas exclusivas para administradores que pueden gestionar y modificar los datos",
 
         tech: "PHP · MySQL · JavaScript",
 
         image: "assets/images/gamedata_img.png",
 
-        repo: "https://github.com/elese10",
+        repo: "https://https://github.com/elese10/GameData",
 
         note:
             "Proyecto académico desarrollado en equipo. Aplicación web con persistencia de datos y funcionalidades sociales."
@@ -164,30 +164,30 @@ const projectsData = {
     sobremesa: {
         number: "PROYECTO / 02",
         title: "Sobremesa",
-        tagline: "El truco, con toda la mesa a mano.",
+        tagline: "El Truco, con toda la mesa a mano.",
         description:
             "Una experiencia web para jugar al truco, trasladando la lógica del juego de cartas a una interfaz digital.",
 
         challenge:
-            "Llevar el juego de cartas a una mesa digital clara, contemplando sus reglas, turnos y sistema de puntuación.",
+            "Llevar el juego de cartas a una mesa digital clara, en el que juegas contra una maquina que contempla las reglas y turnos.",
 
         approach:
-            "Una interfaz para representar partidas, gestionar puntajes y aplicar la lógica necesaria para desarrollar el juego.",
+            "Una interfaz para representar partidas, aplicar la lógica necesaria para desarrollar el juego y desarrollar a la maquina.",
 
         tech: "HTML · CSS · JavaScript",
 
         image: "assets/images/sobremesa_img.png",
 
-        repo: "https://github.com/elese10",
+        repo: "https://github.com/elese10/Sobremesa",
 
         note:
             "Proyecto personal de práctica. Desarrollo enfocado en lógica de programación e interacción con JavaScript."
     },
 
     minishell: {
-        number: "IDEA / EN PREPARACIÓN / 03",
+        number: "EN PREPARACIÓN / 03",
         title: "Mini shell",
-        tagline: "Una idea para explorar el terminal desde cero.",
+        tagline: "Para explorar la terminal desde cero.",
         description:
             "Un proyecto en C para comprender cómo funciona una terminal y cómo interactúa con el sistema operativo.",
 
@@ -197,7 +197,7 @@ const projectsData = {
         approach:
             "Desarrollar progresivamente un intérprete de comandos utilizando conceptos de C y llamadas al sistema POSIX.",
 
-        tech: "C · Terminal · Sistemas",
+        tech: "C · Terminal · Linux",
 
         image: null,
 
