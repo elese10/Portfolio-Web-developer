@@ -24,7 +24,7 @@
             <a href="#proyectos">Proyectos</a>
             <a href="#stack">Stack</a>
             <a href="#formacion">Formación</a>
-            <a class="nav-contact" href="#formacion">Hablemos ↗</a>
+            <a class="nav-contact" href="mailto:ezequielcarcamo49@gmail.com" class="social-link">Hablemos ↗</a>
         </nav>
     </header>
     <main id="main">
@@ -33,22 +33,18 @@
                 <p class="eyebrow">DESARROLLADOR WEB JUNIOR</p>
                 <h1 id="hero-name"><span>EZEQUIEL</span><span>CARCAMO</span></h1>
             </div>
-
             <h2 class="hero-intro">Ideas claras.<br>Webs que funcionan.</h2>
-
             <p class="hero-copy">Me interesa transformar problemas en experiencias simples. Busco nuevas oportunidades para crear, aprender y aportar en equipo.</p>
-
             <p class="hero-education">Técnico en Programación.<br>Estudiante de Licenciatura en<br class="desktop-break"> Sistemas de Información.</p>
-
             <div class="hero-actions">
                 <div class="primary-actions">
                     <a class="button button-primary" href="#proyectos">Ver proyectos ↗</a>
-                    <a class="button button-outline" href="#formacion">Descargar CV ↓</a>
+                    <a class="button button-outline" href="assets/cv_ezequielCarcamo.pdf" download="cv_ezequielCarcamo.pdf">Descargar CV ↓</a>
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/elese10">GitHub ↗</a>
                     <a href="https://www.linkedin.com/in/ezequiel-carcamo/">LinkedIn ↗</a>
-                    <a href="#formacion">Mail ↗</a>
+                    <a href="mailto:ezequielcarcamo49@gmail.com" class="social-link">Mail ↗</a>
                 </div>
             </div>
             <footer class="hero-footer">
@@ -69,7 +65,7 @@
                     <p class="project-text">Biblioteca de juegos con reseñas y listas.</p>
                     <p class="project-tech">PHP · MySQL · JavaScript</p>
                     <div class="project-actions">
-                        <a class="button" href="#">Ver proyecto ↗</a>
+                        <a class="button" href="#project-modal" data-project="gamedata">Ver proyecto ↗</a>
                         <a class="button" href="https://github.com/elese10" target="_blank" rel="noopener">Ver repo ↗</a>
                     </div>
                 </article>
@@ -81,7 +77,7 @@
                     <p class="project-text">Truco web con lógica de juego.</p>
                     <p class="project-tech">JavaScript</p>
                     <div class="project-actions">
-                        <a class="button" href="#">Ver proyecto ↗</a>
+                        <a class="button" href="#project-modal" data-project="sobremesa">Ver proyecto ↗</a>
                         <a class="button" href="https://github.com/elese10" target="_blank" rel="noopener">Ver repo ↗</a>
                     </div>
                 </article>
@@ -94,15 +90,134 @@
                     </div>
                     <h3 class="project-title">03 / Próximo proyecto · C</h3>
                     <p class="project-text">Idea: mini shell en C.</p>
-                    <p class="project-tech">C · POSIX (propuesta)</p>
+                    <p class="project-tech">C · POSIX</p>
                     <div class="project-actions">
-                        <a class="button" href="#">Ver proyecto ↗</a>
+                        <a class="button" href="#project-modal" data-project="minishell">Ver proyecto ↗</a>
                         <span class="button" aria-disabled="true">Sin repo</span>
                     </div>
                 </article>
             </div>
             <p class="projects-count">02 — 04</p>
         </section>
+        <section class="stack" id="stack" aria-labelledby="stack-title">
+            <div class="stack-head">
+                <p class="section-eyebrow" data-reveal>03 / STACK Y HERRAMIENTAS</p>
+                <h2 class="section-title" id="stack-title" data-split>Mi caja de<br>herramientas.</h2>
+                <p class="stack-note" data-reveal>Del primer boceto a la base de datos.<br class="desktop-break"> Estas son las tecnologías con las que<br class="desktop-break"> exploro, practico y construyo.</p>
+            </div> 
+            <div class="stack-grid" data-stagger>
+                <div class="stack-col" data-reveal>
+                    <h3 class="stack-label">01 / FRONTEND</h3>
+                    <ul class="stack-list">
+                        <li>HTML · CSS</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
+                <div class="stack-col" data-reveal>
+                    <h3 class="stack-label">02 / BACKEND</h3>
+                    <ul class="stack-list">
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="stack-col stack-col--data" data-reveal>
+                    <h3 class="stack-label">03 / DATOS</h3>
+                    <ul class="stack-list">
+                        <li>Bases de datos · SQL</li>
+                        <li>Modelado entidad-relación</li>
+                    </ul>
+                </div>
+                <div class="stack-col" data-reveal>
+                    <h3 class="stack-label">04 / HERRAMIENTAS</h3>
+                    <ul class="stack-list">
+                        <li>Git · GitHub · Figma</li>
+                        <li>Windows</li>
+                        <li>Linux / Fedora</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stack-footer">
+                <p class="stack-footer-title">Siempre hay una herramienta nueva por aprender.</p>
+                <p class="stack-footer-text">La curiosidad también es parte del stack.</p>
+                <a class="stack-link" href="#formacion">Formación y contacto <span aria-hidden="true">↓</span></a>
+                <p class="section-count">03 — 04</p>
+            </div>
+        </section>
+        <section class="about" id="formacion" aria-labelledby="about-title">
+            <div class="about-layout">
+                <div class="about-main">
+                    <p class="section-eyebrow" data-reveal>04 / SOBRE MÍ Y FORMACIÓN</p>
+                    <h2 class="section-title" id="about-title" data-split>En formación.<br>En movimiento.</h2>
+                    <div class="about-summary" data-reveal>
+                        <p class="about-lead">Soy Ezequiel, desarrollador web junior, con formación técnica y ganas de seguir construyendo.</p>
+                        <p class="about-text">Durante mi pasantía en fábrica participé en tareas de automatización y mantenimiento de sistemas.</p>
+                        <div class="tags">
+                            <span class="tag">Curiosidad</span>
+                            <span class="tag">Aprendizaje continuo</span>
+                            <span class="tag">Trabajo en equipo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education" data-stagger>
+                    <article class="education-item" data-reveal>
+                        <p class="education-label">01 / ACTUALMENTE</p>
+                        <h3 class="education-title">Licenciatura en<br class="desktop-break"> Sistemas de Información</h3>
+                        <p class="education-place">Universidad · Universidad Champagnat (Mendoza, Argentina)</p>
+                        <p class="education-status is-live">En curso</p>
+                    </article>
+                    <article class="education-item" data-reveal>
+                        <p class="education-label">02 / FORMACIÓN TÉCNICA</p>
+                        <h3 class="education-title">Técnico en Programación</h3>
+                        <p class="education-place">Secundaria técnica · Colegio Tecnico Provincial Olga B De Arko (Ushuaia, Tierra Del Fuego. Argentina)</p>
+                        <p class="education-status">Egreso · 2024</p>
+                    </article>
+                </div>
+            </div>
+            <div class="contact" id="contacto" data-line>
+                <div class="contact-row">
+                    <h2 class="contact-title" data-split>¿Construimos algo juntos?</h2>
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="mailto:ezequielcarcamo49@mail.com">Mail ↗</a>
+                        <a class="button" href="https://www.linkedin.com/in/ezequiel-carcamo/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a class="button" href="https://github.com/elese10" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="contact-foot">
+                    <p>Ezequiel Carcamo / Portfolio personal</p>
+                    <p class="section-count">04 — 04</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <div class="project-modal" id="project-modal" aria-hidden="true" hidden>
+    <button class="modal-close" type="button" aria-label="Cerrar modal" data-close-modal>×</button>
+    <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+        <div class="modal-preview" id="modal-preview"></div>
+        <div class="modal-information">
+            <div class="modal-overview">
+                <p class="modal-eyebrow" id="modal-number"></p>
+                <h2 id="modal-title"></h2>
+                <h3 id="modal-tagline"></h3>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
+            <div class="modal-detail">
+                <h4>EL DESAFÍO</h4>
+                <p id="modal-challenge"></p>
+            </div>
+            <div class="modal-detail">
+                <h4>LA PROPUESTA</h4>
+                <p id="modal-approach"></p>
+            </div>
+        </div>
+        <div class="modal-actions">
+            <p id="modal-tech"></p>
+            <a class="button button-primary" id="modal-repository" href="#" target="_blank" rel="noopener noreferrer">Ver GitHub ↗</a>
+        </div>
+        <footer class="modal-footer">
+            <p id="modal-note"></p>
+        </footer>
+    </article>
+</div>
 </body>
 </html>
