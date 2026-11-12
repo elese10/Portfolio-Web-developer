@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FAF9F6">
+    <meta name="description" content="Portfolio de Ezequiel Carcamo, desarrollador web junior.">
+    <title>Ezequiel Carcamo | Desarrollador web</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23181818'/%3E%3Ctext x='9' y='44' font-family='Arial,sans-serif' font-size='32' font-weight='700' fill='%23FAF9F6'%3Eec%3C/text%3E%3Ccircle cx='51' cy='42' r='4' fill='%23C63E1B'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header">
+        <a class="ec" href="#home" aria-label="Ezequiel Carcamo, inicio">ec.</a>
+        <span class="mobile-label" aria-hidden="true">PORTFOLIO</span>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a class="is-current" href="#home" aria-current="page">Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#stack">Stack</a>
+            <a href="#formacion">Formación</a>
+            <a class="nav-contact" href="mailto:ezequielcarcamo49@gmail.com" class="social-link">Hablemos ↗</a>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-name">
+            <div class="hero-identity">
+                <p class="eyebrow">DESARROLLADOR WEB JUNIOR</p>
+                <h1 id="hero-name"><span>EZEQUIEL</span><span>CARCAMO</span></h1>
+            </div>
+            <h2 class="hero-intro">Ideas claras.<br>Webs que funcionan.</h2>
+            <p class="hero-copy">Me interesa transformar problemas en experiencias simples. Busco nuevas oportunidades para crear, aprender y aportar en equipo.</p>
+            <p class="hero-education">Técnico en Programación.<br>Estudiante de Licenciatura en<br class="desktop-break"> Sistemas de Información.</p>
+            <div class="hero-actions">
+                <div class="primary-actions">
+                    <a class="button button-primary" href="#proyectos">Ver proyectos ↗</a>
+                    <a class="button button-outline" href="assets/cv_ezequielCarcamo.pdf" download="cv_ezequielCarcamo.pdf">Descargar CV ↓</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/elese10">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/ezequiel-carcamo/">LinkedIn ↗</a>
+                    <a href="mailto:ezequielcarcamo49@gmail.com" class="social-link">Mail ↗</a>
+                </div>
+            </div>
+            <footer class="hero-footer">
+                <span>EC / PORTFOLIO PERSONAL</span>
+                <a class="footer-explore" href="#proyectos">01 — 04</a>
+            </footer>
+        </section>
+        <section class="projects" id="proyectos" aria-labelledby="projects-title">
+            <p class="section-eyebrow" data-reveal>02 / PROYECTOS</p>
+            <h2 class="projects-title" id="projects-title" data-split>Menos teoría. Más construir.</h2>
+            <p class="projects-intro" data-reveal>Abrí un proyecto para ver el contexto, las decisiones y los enlaces disponibles.</p>
+            <div class="projects-grid">
+                <article class="project-card" data-reveal>
+                    <div class="project-media">
+                        <img src="assets/images/gamedata_img.png" alt="" width="544" height="330" loading="lazy">
+                    </div>
+                    <h3 class="project-title">01 / GameData</h3>
+                    <p class="project-text">Biblioteca de juegos con reseñas y listas.</p>
+                    <p class="project-tech">PHP · MySQL · JavaScript</p>
+                    <div class="project-actions">
+                        <a class="button" href="#project-modal" data-project="gamedata">Ver proyecto ↗</a>
+                        <a class="button" href="https://github.com/elese10" target="_blank" rel="noopener">Ver repo ↗</a>
+                    </div>
+                </article>
+                <article class="project-card" data-reveal>
+                    <div class="project-media">
+                        <img src="assets/images/sobremesa_img.png" alt="" width="544" height="330" loading="lazy">
+                    </div>
+                    <h3 class="project-title">02 / Sobremesa</h3>
+                    <p class="project-text">Truco web con lógica de juego.</p>
+                    <p class="project-tech">JavaScript</p>
+                    <div class="project-actions">
+                        <a class="button" href="#project-modal" data-project="sobremesa">Ver proyecto ↗</a>
+                        <a class="button" href="https://github.com/elese10" target="_blank" rel="noopener">Ver repo ↗</a>
+                    </div>
+                </article>
+                <article class="project-card" data-reveal>
+                    <div class="project-media">
+                        <div class="terminal" role="img" aria-label="Animación de una mini shell en C ejecutando comandos">
+                            <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span><b>mini-shell</b></div>
+                            <div class="terminal-body" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <h3 class="project-title">03 / Próximo proyecto · C</h3>
+                    <p class="project-text">Idea: mini shell en C.</p>
+                    <p class="project-tech">C · POSIX</p>
+                    <div class="project-actions">
+                        <a class="button" href="#project-modal" data-project="minishell">Ver proyecto ↗</a>
+                        <span class="button" aria-disabled="true">Sin repo</span>
+                    </div>
+                </article>
+            </div>
+            <p class="projects-count">02 — 04</p>
+        </section>
+        <section class="stack" id="stack" aria-labelledby="stack-title">
+            <div class="stack-head">
+                <p class="section-eyebrow" data-reveal>03 / STACK Y HERRAMIENTAS</p>
+                <h2 class="section-title" id="stack-title" data-split>Mi caja de<br>herramientas.</h2>
+                <p class="stack-note" data-reveal>Del primer boceto a la base de datos.<br class="desktop-break"> Estas son las tecnologías con las que<br class="desktop-break"> exploro, practico y construyo.</p>
+            </div> 
+            <div class="stack-grid" data-stagger>
+                <div class="stack-col" data-reveal>
+                    <h3 class="stack-label">01 / FRONTEND</h3>
+                    <ul class="stack-list">
+                        <li>HTML · CSS</li>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                    </ul>
+                </div>
+                <div class="stack-col" data-reveal>
+                    <h3 class="stack-label">02 / BACKEND</h3>
+                    <ul class="stack-list">
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                    </ul>
+                </div>
+                <div class="stack-col stack-col--data" data-reveal>
+                    <h3 class="stack-label">03 / DATOS</h3>
+                    <ul class="stack-list">
+                        <li>Bases de datos · SQL</li>
+                        <li>Modelado entidad-relación</li>
+                    </ul>
+                </div>
+                <div class="stack-col" data-reveal>
+                    <h3 class="stack-label">04 / HERRAMIENTAS</h3>
+                    <ul class="stack-list">
+                        <li>Git · GitHub · Figma</li>
+                        <li>Windows</li>
+                        <li>Linux / Fedora</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="stack-footer">
+                <p class="stack-footer-title">Siempre hay una herramienta nueva por aprender.</p>
+                <p class="stack-footer-text">La curiosidad también es parte del stack.</p>
+                <a class="stack-link" href="#formacion">Formación y contacto <span aria-hidden="true">↓</span></a>
+                <p class="section-count">03 — 04</p>
+            </div>
+        </section>
+        <section class="about" id="formacion" aria-labelledby="about-title">
+            <div class="about-layout">
+                <div class="about-main">
+                    <p class="section-eyebrow" data-reveal>04 / SOBRE MÍ Y FORMACIÓN</p>
+                    <h2 class="section-title" id="about-title" data-split>En formación.<br>En movimiento.</h2>
+                    <div class="about-summary" data-reveal>
+                        <p class="about-lead">Soy Ezequiel, desarrollador web junior, con formación técnica y ganas de seguir construyendo.</p>
+                        <p class="about-text">Durante mi pasantía en fábrica participé en tareas de automatización y mantenimiento de sistemas.</p>
+                        <div class="tags">
+                            <span class="tag">Curiosidad</span>
+                            <span class="tag">Aprendizaje continuo</span>
+                            <span class="tag">Trabajo en equipo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="education" data-stagger>
+                    <article class="education-item" data-reveal>
+                        <p class="education-label">01 / ACTUALMENTE</p>
+                        <h3 class="education-title">Licenciatura en<br class="desktop-break"> Sistemas de Información</h3>
+                        <p class="education-place">Universidad · Universidad Champagnat (Mendoza, Argentina)</p>
+                        <p class="education-status is-live">En curso</p>
+                    </article>
+                    <article class="education-item" data-reveal>
+                        <p class="education-label">02 / FORMACIÓN TÉCNICA</p>
+                        <h3 class="education-title">Técnico en Programación</h3>
+                        <p class="education-place">Secundaria técnica · Colegio Tecnico Provincial Olga B De Arko (Ushuaia, Tierra Del Fuego. Argentina)</p>
+                        <p class="education-status">Egreso · 2024</p>
+                    </article>
+                </div>
+            </div>
+            <div class="contact" id="contacto" data-line>
+                <div class="contact-row">
+                    <h2 class="contact-title" data-split>¿Construimos algo juntos?</h2>
+                    <div class="contact-actions">
+                        <a class="button button-primary" href="mailto:ezequielcarcamo49@mail.com">Mail ↗</a>
+                        <a class="button" href="https://www.linkedin.com/in/ezequiel-carcamo/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a class="button" href="https://github.com/elese10" target="_blank" rel="noopener">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="contact-foot">
+                    <p>Ezequiel Carcamo / Portfolio personal</p>
+                    <p class="section-count">04 — 04</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="project-modal" id="project-modal" aria-hidden="true" hidden>
+    <button class="modal-close" type="button" aria-label="Cerrar modal" data-close-modal>×</button>
+    <article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+        <div class="modal-preview" id="modal-preview"></div>
+        <div class="modal-information">
+            <div class="modal-overview">
+                <p class="modal-eyebrow" id="modal-number"></p>
+                <h2 id="modal-title"></h2>
+                <h3 id="modal-tagline"></h3>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
+            <div class="modal-detail">
+                <h4>EL DESAFÍO</h4>
+                <p id="modal-challenge"></p>
+            </div>
+            <div class="modal-detail">
+                <h4>LA PROPUESTA</h4>
+                <p id="modal-approach"></p>
+            </div>
+        </div>
+        <div class="modal-actions">
+            <p id="modal-tech"></p>
+            <a class="button button-primary" id="modal-repository" href="#" target="_blank" rel="noopener noreferrer">Ver GitHub ↗</a>
+        </div>
+        <footer class="modal-footer">
+            <p id="modal-note"></p>
+        </footer>
+    </article>
+</div>
+</body>
+</html>
